@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pre-Pos Practice
 
 本项目通过多种预备训练，来锻炼学员的JavaScript初级编程能力。
@@ -14,3 +15,7 @@
 
 1. 请尽可能的使用命令行完成相关操作；
 2. 使用Git管理代码时请尽可能的遵照[Git使用的最佳实践](https://github.com/iamcoach/git)。
+=======
+# pre-pos
+use for pre-pos homework
+>>>>>>> 3e6b72012a22200e8df8fc8a98835b414051a1bd
