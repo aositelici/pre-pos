@@ -1,15 +1,11 @@
+function findItem(collection_a,object_b,i){
+  if(object_b.value.indexOf(collection_a[i].key) != -1){
+      collection_a[i].count --;
+  }
+}
 function create_updated_collection(collection_a, object_b) {
-  //在这里写入代码
-  for(var x=0;x<collection_a.length;x++)
-  {
-  	for(var y=0;y<object_b.value.length;y++)
-  	{
-        if(collection_a[x].key===object_b.value[y])
-        {
-        	collection_a[x].count--;
-        	break;
-        }
-  	}
+  for(var x = 0; x < collection_a.length; x ++){
+    findItem(collection_a,object_b,x);
   }
   return collection_a;
 }
