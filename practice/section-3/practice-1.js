@@ -1,5 +1,5 @@
 function findItem(collection_a,object_b,i){
-  if(object_b.value.indexOf(collection_a[i].key) != -1){
+  if(object_b.value.indexOf(collection_a[i].key) !== -1){
       collection_a[i].count --;
   }
 }

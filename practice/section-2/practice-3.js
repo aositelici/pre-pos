@@ -18,7 +18,7 @@ function getElementCount(item) {
   return count;
 }
 
-function countElement(collection,i,count,count_str) {
+function getCount(collection,i,count,count_str) {
   var number = count;
   for(var x = i + 1; x < collection.length; x ++){
     if(collection[i][0] === collection[x][0]){
@@ -37,8 +37,8 @@ function count_same_elements(collection) {
   for(var i = 0;i < collection.length; i += count_str){
     var count = getElementCount(collection[i]);
     var count_str=1;
-    count = countElement(collection,i,count,count_str).count;
-    count_str = countElement(collection,i,count,count_str).count_str;
+    count = getCount(collection,i,count,count_str).count;
+    count_str = getCount(collection,i,count,count_str).count_str;
     result.push({name:collection[i][0], summary:count}); 
   }
   return result;

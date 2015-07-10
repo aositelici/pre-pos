@@ -18,7 +18,7 @@ function countMultipleElement(collection,i){
   }
   return count;
 }
-function countElement(collection,i){
+function getCount(collection,i){
   if(collection[i].length != 1){
     var number = parseInt(countSingleElement(collection[i]));
     return ({key:collection[i][0],count:number});
@@ -31,7 +31,7 @@ function countElement(collection,i){
 function count_same_elements(collection) {
   var result = [];
   for(var i = 0; i < collection.length; i += count){
-    var elements = countElement(collection,i);
+    var elements = getCount(collection,i);
     var count = elements.count;
     result.push(elements);
   }

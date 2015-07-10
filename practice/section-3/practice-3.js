@@ -1,4 +1,4 @@
-function countElement(collection,i){
+function getCount(collection,i){
   var count = 1;
   for(var x = i+1; x < collection.length; x++){
     if(collection[i] === collection[x]){
@@ -13,14 +13,14 @@ function countElement(collection,i){
 function count_same_elements(collection) {
   var result = [];
   for(var i = 0; i < collection.length; i+= count){
-    var count = countElement(collection,i);
+    var count = getCount(collection,i);
     result.push({key:collection[i],count:count});    
   }
   return result;
 }
 
 function findItem(collection_a,object_b,i){
-  if(object_b.value.indexOf(collection_a[i].key) != -1){
+  if(object_b.value.indexOf(collection_a[i].key) !== -1){
       collection_a[i].count -= (parseInt(collection_a[i].count/3));
   }
 }
